@@ -2,17 +2,16 @@
   "name": "@ethereum-lists/chains",
   "type": "module",
   "files": [
-    "./package.js",
-    "./package.d.ts",
+    "./packages/npm/",
     "./_data/",
     "./tools/schema/"
   ],
   "scripts": {
-    "build-chain-ts": "json2ts ./tools/schema/chainSchema.json > chain.ts",
+    "build-chain-ts": "json2ts ./tools/schema/chainSchema.json > ./packages/npm/chain.ts",
     "build": "yarn build-chain-ts && tsc --build"
   },
   "exports": {
-    ".": "./package.js",
+    ".": "./packages/npm/package.js",
     "./data/*": "./_data/*",
     "./schema/*": "./tools/schema/*",
     "./package.json": "./package.json"
