@@ -7,10 +7,19 @@
     "./_data/",
     "./tools/schema/"
   ],
+  "scripts": {
+    "build-chain-ts": "json2ts ./tools/schema/chainSchema.json > chain.ts",
+    "build": "yarn build-chain-ts && tsc --build"
+  },
   "exports": {
     ".": "./package.js",
     "./data/*": "./_data/*",
     "./schema/*": "./tools/schema/*",
     "./package.json": "./package.json"
-  }
+  },
+  "devDependencies": {
+    "json-schema-to-typescript": "^13.1.1",
+    "typescript": "^5.2.2"
+  },
+  "packageManager": "yarn@4.0.1"
 }
