@@ -3,6 +3,7 @@
   "type": "module",
   "files": [
     "./package.js",
+    "./package.d.ts",
     "./_data/",
     "./tools/schema/"
   ],
