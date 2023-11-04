@@ -1,0 +1,15 @@
+{
+  "name": "@ethereum-lists/chains",
+  "type": "module",
+  "files": [
+    "./package.js",
+    "./_data/",
+    "./tools/schema/"
+  ],
+  "exports": {
+    ".": "./package.js",
+    "./data/*": "./_data/*",
+    "./schema/*": "./tools/schema/*",
+    "./package.json": "./package.json"
+  }
+}
